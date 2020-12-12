@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sign_in">
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sign_in_bg"
+        android:alpha="0.3"/>
+<TextView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create A New Account?"
+        android:layout_gravity="center_horizontal | bottom"
+        android:textColor="@color/gray"
+        android:layout_marginBottom="50dp"
+        android:onClick="toSignUp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/white"
+
+            android:layout_margin="20dp"
+            android:elevation="8dp"
+            >
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:src="@drawable/man"/>
+            </FrameLayout>
+            <TextView
+                android:layout_width="3px"
+                android:layout_height="match_parent"
+                android:background="@color/gray"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:inputType="textNoSuggestions"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/name"
+                android:hint="Ivanov.I"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@color/white"
+            android:elevation="8dp"
+            >
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lock"/>
+            </FrameLayout>
+            <TextView
+                android:layout_width="3px"
+                android:layout_height="match_parent"
+                android:background="@color/gray"/>
+            <EditText
+                android:layout_width="200dp"
+                android:id="@+id/pas"
+                android:layout_marginLeft="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:inputType="textPassword"
+                android:hint="••••••"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password ?"
+            android:layout_gravity="center_horizontal | bottom"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="50dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:text="Sign in"
+            android:onClick="pressButton"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>
