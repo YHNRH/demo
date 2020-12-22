@@ -22,7 +22,6 @@ public class Sign_up extends AppCompatActivity {
     EditText mail;
     EditText pas0;
     EditText pas1;
-    RequestTask requestTask;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
